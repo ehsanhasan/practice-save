@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="wid/illustrators/31776-5-cricket-bat-transparent.pngh=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+            border: 1px solid black;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+        }
+
+        .field:hover .ball {
+            transform: translate(3000px, -500px);
+        }
+
+        .ball {
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            border-radius: 32px;
+            position: relative;
+            left: 980px;
+            transition: transform 1s ease-in-out 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="images/illustrators/31776-5-cricket-bat-transparent.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
